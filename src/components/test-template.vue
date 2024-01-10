@@ -2,12 +2,11 @@
     <v-container v-for="queze in quezes" :key="queze.title">
         <v-card @click="toQueze(queze.id)" :image="queze.image" class="mr-10" width="344" height="220" hover>
             <v-card-item>
-                <v-card-title class="text-black">
+                <v-card-title class="text-black text-uppercase text-h4">
                     {{ queze.title }}
                 </v-card-title>
             </v-card-item>
-
-            <v-card-text class="text-black">
+            <v-card-text class="mt-5 text-black text-uppercase text-h6">
                 {{ queze.description }}
             </v-card-text>
         </v-card>

@@ -15,6 +15,9 @@
             <v-btn color="primary" @click.stop="drawer = !drawer">
                 toogle
             </v-btn>
+            <v-btn to="/" color="primary" @click.stop="drawer = !drawer">
+                Home
+            </v-btn>
         </div>
     </v-app-bar>
 </template>
