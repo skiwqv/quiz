@@ -1,16 +1,19 @@
 <template>
-    <v-container v-for="queze in quezes" :key="queze.title">
-        <v-card @click="toQueze(queze.id)" :image="queze.image" class="mr-10" width="344" height="220" hover>
-            <v-card-item>
-                <v-card-title class="text-black text-uppercase text-h4">
-                    {{ queze.title }}
-                </v-card-title>
-            </v-card-item>
-            <v-card-text class="mt-5 text-black text-uppercase text-h6">
-                {{ queze.description }}
-            </v-card-text>
-        </v-card>
-    </v-container>
+    <v-row>
+        <v-col v-for="queze in quezes" :key="queze.title" cols="12" sm="6" md="4" lg="4" xl="4"
+            class="d-flex justify-center">
+            <v-card @click="toQueze(queze.id)" :image="queze.image" width="350" height="220" hover>
+                <v-card-item>
+                    <v-card-title class="text-black text-uppercase text-h4">
+                        {{ queze.title }}
+                    </v-card-title>
+                </v-card-item>
+                <v-card-text class="mt-5 text-black text-uppercase text-h6">
+                    {{ queze.description }}
+                </v-card-text>
+            </v-card>
+        </v-col>
+    </v-row>
 </template>
 
 <script setup>

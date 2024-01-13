@@ -1,10 +1,10 @@
 <template>
     <v-container class="mt-10">
-        <div class="d-flex" style="height: 15em; max-width:1200px">
-            <div class="d-flex flex-row">
+        <v-row>
+            <v-col class="d-flex justify-center align-center">
                 <testTemplateVue></testTemplateVue>
-            </div>
-        </div>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 
