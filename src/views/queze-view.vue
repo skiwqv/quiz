@@ -221,7 +221,7 @@ function nextQuestion() {
 }
 
 function refreshWindow() {
-    window.location.reload()
+    router.push(`quize/${quezeId}`)
 }
 
 onMounted(() => {
