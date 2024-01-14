@@ -59,7 +59,7 @@
                             </tr>
                         </tbody>
                     </v-table>
-                    <v-btn append-icon="mdi-refresh" @click="refreshWindow">Try Again</v-btn>
+                    <v-btn append-icon="mdi-home" @click="refreshWindow">To home</v-btn>
                 </div>
             </div>
         </v-container>
@@ -189,7 +189,6 @@ let textColor = computed(() => {
 })
 
 function handleAnswer(answer) {
-
     if (answer == currentQuestion.value.corectAnswer) {
         isCorrect.value = true;
         isWrong.value = false;
@@ -221,7 +220,7 @@ function nextQuestion() {
 }
 
 function refreshWindow() {
-    router.push(`quize/${quezeId}`)
+    router.push('/')
 }
 
 onMounted(() => {
